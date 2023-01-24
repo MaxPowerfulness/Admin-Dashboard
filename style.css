@@ -12,8 +12,8 @@ body {
 }
 
 img {
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
 }
 
 #header {
@@ -134,21 +134,64 @@ main > p,
 }
 
 .project {
-    height: 200px;
+    height: 210px;
     width: 350px;
     border: 1px solid green;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.proj_text > h2 {
+    padding: 20px 40px 5px 20px
 }
 
 .project p {
-    font-size: 10px;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 80px;
+}
+
+.proj_icons {
+    align-self: flex-end;
+}
+
+.proj_icons img {
+    padding: 0px 20px 20px 0px;
+}
+
+.grid_wrapper {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 #annoucements {
     border: 1px solid red;
-    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-top: 30px;
 }
+
+.annoucement_text {
+    padding: 10px 40px 10px 40px;
+}
+
 
 #trending_profiles {
     border: 1px solid red;
+    grid-row: 2 / 3;
+}
+
+.trending{ 
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.trending_prof {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px 0px 20px;
 }
